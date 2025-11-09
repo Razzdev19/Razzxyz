@@ -1,110 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Razz</title>
-  <style>
-    body {
-      margin: 0;
-      background-color: #000;
-      color: #fff;
-      font-family: "Poppins", sans-serif;
-      text-align: center;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Razz</title>
+<style>
+  body {
+    margin: 0;
+    background-color: #000;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+  }
 
-    img.profile {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      margin-top: 50px;
-      border: 3px solid #ff0066;
-      object-fit: cover;
-    }
+  /* Profile Section */
+  .profile {
+    margin-top: 60px;
+  }
 
-    h1 {
-      font-size: 22px;
-      margin-top: 15px;
-    }
+  .profile img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #ff006a;
+    object-fit: cover;
+  }
 
-    p {
-      color: #aaa;
-      font-size: 14px;
-      margin-bottom: 25px;
-    }
+  .name {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 15px;
+  }
 
-    .links a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      margin: 10px auto;
-      width: 85%;
-      max-width: 350px;
-      background-color: #111;
-      padding: 14px 0;
-      border-radius: 10px;
-      color: white;
-      text-decoration: none;
-      font-weight: 500;
-      transition: 0.25s;
-    }
+  .name h1 {
+    font-size: 26px;
+    margin: 0;
+  }
 
-    .links a:hover {
-      background-color: #222;
-      transform: scale(1.02);
-    }
+  .verified {
+    width: 20px;
+    height: 20px;
+    filter: drop-shadow(0 0 3px #3EA6FF);
+  }
 
-    .links img.icon {
-      width: 20px;
-      height: 20px;
-      filter: invert(1);
-    }
+  p {
+    color: #aaa;
+    font-size: 14px;
+    margin: 8px 0 25px;
+  }
 
-    iframe {
-      border-radius: 12px;
-      margin-top: 30px;
-      width: 90%;
-      max-width: 350px;
-      height: 380px;
-      border: none;
-    }
+  /* Links */
+  .links {
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: 80%;
+    max-width: 400px;
+  }
 
-    footer {
-      color: #444;
-      margin: 40px 0 20px;
-      font-size: 13px;
-    }
-  </style>
+  .links a {
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    background-color: #111;
+    padding: 12px 0;
+    border-radius: 10px;
+    transition: 0.3s;
+    border: 1px solid #222;
+    font-weight: 500;
+  }
+
+  .links a:hover {
+    background-color: #222;
+    transform: scale(1.02);
+  }
+
+  /* Spotify Embed 16:9 */
+  iframe {
+    border-radius: 15px;
+    width: 90%;
+    aspect-ratio: 16 / 9;
+    max-width: 800px;
+    margin-top: 25px;
+    border: none;
+  }
+
+  footer {
+    margin-top: 50px;
+    color: #444;
+    font-size: 13px;
+  }
+</style>
 </head>
 <body>
-  <!-- Gambar profil -->
-  <img src="https://files.catbox.moe/jmtynz.jpg" alt="profile" class="profile" />
 
-  <h1>Razz <span style="color:#3EA6FF;">✔</span></h1>
-  <p>if only the world knew how i feel</p>
-
-  <div class="links">
-    <a href="https://instagram.com/hogriders_48" target="_blank">
-      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" class="icon" alt="Instagram">
-      Instagram
-    </a>
-    <a href="https://t.me/Razz_Official1" target="_blank">
-      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg" class="icon" alt="Telegram">
-      Telegram
-    </a>
-    <a href="https://wa.me/6282249317690" target="_blank">
-      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" class="icon" alt="WhatsApp">
-      WhatsApp
-    </a>
+  <!-- Profile -->
+  <div class="profile">
+    <img src="https://files.catbox.moe/jmtynz.jpg" alt="Razz Profile">
+    <div class="name">
+      <h1>Razz</h1>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Twitter_Verified_Badge.svg" alt="Verified" class="verified">
+    </div>
+    <p>if only the world knew how i feel</p>
   </div>
 
-  <!-- Embed Spotify Playlist Tenxi -->
+  <!-- Links -->
+  <div class="links">
+    <a href="https://t.me/Razz_Official1" target="_blank">Telegram</a>
+    <a href="https://wa.me/6282249317690" target="_blank">WhatsApp</a>
+    <a href="https://instagram.com/hogriders_48" target="_blank">Instagram</a>
+  </div>
+
+  <!-- Spotify (semua lagu Tenxi) -->
   <iframe 
-    src="https://open.spotify.com/embed/artist/6vP4azTCk053nGL0xAYnVH?utm_source=generator&theme=0"
+    src="https://open.spotify.com/embed/artist/6vP4azTCk053nGL0xAYnVH?utm_source=generator" 
     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
   </iframe>
 
-  <footer>razz.</footer>
+  <footer>© Razz</footer>
+
 </body>
+</html></body>
 </html>
