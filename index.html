@@ -18,7 +18,7 @@
       height: 120px;
       border-radius: 50%;
       margin-top: 50px;
-      border: 3px solid #ff0055;
+      border: 3px solid #ff0066;
       object-fit: cover;
     }
 
@@ -34,28 +34,38 @@
     }
 
     .links a {
-      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
       margin: 10px auto;
-      width: 80%;
-      max-width: 300px;
+      width: 85%;
+      max-width: 350px;
       background-color: #111;
-      padding: 12px;
-      border-radius: 12px;
+      padding: 14px 0;
+      border-radius: 10px;
       color: white;
       text-decoration: none;
+      font-weight: 500;
       transition: 0.25s;
     }
 
     .links a:hover {
       background-color: #222;
-      transform: scale(1.03);
+      transform: scale(1.02);
+    }
+
+    .links img.icon {
+      width: 20px;
+      height: 20px;
+      filter: invert(1);
     }
 
     iframe {
       border-radius: 12px;
       margin-top: 30px;
-      width: 80%;
-      max-width: 300px;
+      width: 90%;
+      max-width: 350px;
       height: 380px;
       border: none;
     }
@@ -68,21 +78,30 @@
   </style>
 </head>
 <body>
-  <!-- Ganti link src di bawah dengan URL langsung gambar kamu (upload ke imgbb/imgur/github dll) -->
-  <img src="https://i.imgur.com/V6M0S0z.png" alt="profile" class="profile" />
-  
+  <!-- Gambar profil -->
+  <img src="https://files.catbox.moe/jmtynz.jpg" alt="profile" class="profile" />
+
   <h1>Razz <span style="color:#3EA6FF;">✔</span></h1>
   <p>if only the world knew how i feel</p>
 
   <div class="links">
-    <a href="https://instagram.com/hogriders_48" target="_blank">📸 Instagram</a>
-    <a href="https://t.me/Razz_Official1" target="_blank">💬 Telegram</a>
-    <a href="https://wa.me/6282249317690" target="_blank">📱 WhatsApp</a>
+    <a href="https://instagram.com/hogriders_48" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" class="icon" alt="Instagram">
+      Instagram
+    </a>
+    <a href="https://t.me/Razz_Official1" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg" class="icon" alt="Telegram">
+      Telegram
+    </a>
+    <a href="https://wa.me/6282249317690" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" class="icon" alt="WhatsApp">
+      WhatsApp
+    </a>
   </div>
 
-  <!-- Playlist Spotify semua lagu Tenxi -->
+  <!-- Embed Spotify Playlist Tenxi -->
   <iframe 
-    src="https://open.spotify.com/embed/artist/5QdFfDLnKgc3F2WWo9bMUB?utm_source=generator"
+    src="https://open.spotify.com/embed/artist/6vP4azTCk053nGL0xAYnVH?utm_source=generator&theme=0"
     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
   </iframe>
 
